@@ -171,7 +171,49 @@ ul {
   white-space: nowrap
 }
 /* About */
-
+.site-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 280px;
+}
+.site-about-content {
+  width: 650px;
+}
+.site-about-heading {
+  color: var(--black);
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: 600;
+}
+.site-about-info {
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--gray);
+  margin-top: 20px;
+}
+.site-about-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.site-about-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.site-about-stats-num {
+  font-size: 45px;
+  line-height: 75px;
+  color: #2A3246;
+  font-weight: 600;
+}
+.site-about-stats-text {
+  color: var(--gray);
+  font-size: 20px;
+  line-height: 30px;
+}
 
 
 
