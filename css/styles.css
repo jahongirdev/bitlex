@@ -214,6 +214,11 @@ ul {
   font-size: 20px;
   line-height: 30px;
 }
+/* Pricing */
+
+
+
+
 
 
 
@@ -233,6 +238,18 @@ ul {
     justify-content: space-between;
     align-items: center;
     flex-direction: column-reverse;
+  }
+  .site-about {
+    margin-top: 130px;
+  }
+  .site-about-heading {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .site-about-info {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -264,6 +281,14 @@ ul {
     padding: 20px 80px;
     font-size: 20px;
     border-radius: 13px;
+  }
+  .site-about-stats-num {
+    font-size: 35px;
+    line-height: 60px;
+  }
+  .site-about-stats-text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -298,6 +323,14 @@ ul {
       'third third'
       'fourth fourth';
     gap: 20px;
+  }
+  .site-about {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .site-about-content {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
