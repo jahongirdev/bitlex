@@ -511,6 +511,10 @@ ul {
   .site-contact-form-email, .site-contact-form-btn {
     width: 100%;
   }
+  .site-footer-menu li a {
+    color: var(--gray);
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .site-hero {
@@ -531,6 +535,4 @@ ul {
   }
 }
 @media only screen and (max-width: 500px) {
-}
-@media only screen and (max-width: 400px) {
 }
