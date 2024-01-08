@@ -20,6 +20,7 @@ html {
 body {
   font-family: var(--font-stack);
   background-color: #fff;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -31,16 +32,6 @@ a {
 ul {
   list-style-type: none;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -50,15 +41,32 @@ ul {
 .site-header {
   padding: 30px 0px;
 }
+/* .site-navbar-fixed {
+  position: fixed;
+} */
 .site-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.site-logo:hover {
+  opacity: 0.7;
+}
+.site-logo:active {
+  opacity: 0.4;
+}
 .site-menu {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+.site-menu-li:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.site-menu-li:active {
+  opacity: 0.5;
 }
 .site-menu-link {
   font-size: 19px;
@@ -72,6 +80,14 @@ ul {
   border: 2px solid var(--dark);
   padding: 15px 50px;
   border-radius: 5px;
+}
+.site-nav-btn:hover {
+  background-color: var(--dark);
+  color: var(--white);
+  transition: 0.3s;
+}
+.site-nav-btn:active {
+  opacity: 0.8;
 }
 .site-mobile-menu {
   display: none;
@@ -103,9 +119,18 @@ ul {
 .site-hero-btn {
   background-color: var(--dark);
   color: var(--white);
-  padding: 25px 90px;
+  padding: 23px 88px;
+  border: 2px solid var(--dark);
   font-size: 24px;
   border-radius: 15px;
+}
+.site-hero-btn:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  transition: 0.3s;
+}
+.site-hero-btn:active {
+  opacity: 0.8;
 }
 /* Skills */
 .site-skills {
@@ -163,12 +188,21 @@ ul {
 .site-skills-box-btn {
   background-color: var(--dark);
   color: var(--white);
-  padding: 16px 60px;
+  padding: 14px 57px;
+  border: 2px solid var(--dark);
   border-radius: 5px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
   white-space: nowrap
+}
+.site-skills-box-btn:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  transition: 0.3s;
+}
+.site-skills-box-btn:active {
+  opacity: 0.8;
 }
 /* About */
 .site-about {
@@ -253,6 +287,7 @@ ul {
   padding: 5px 20px;
   border-radius: 10px;
   margin-top: 25px;
+  text-align: center;
 }
 .site-pricing-price1 {
   font-size: 25px;
@@ -292,6 +327,7 @@ ul {
   border-radius: 10px;
   padding: 25px;
   width: 400px;
+  outline-color: var(--dark);
 }
 .site-contact-form-btn {
   background-color: var(--dark);
@@ -304,6 +340,14 @@ ul {
   line-height: 28px;
   cursor: pointer;
   white-space: nowrap;
+}
+.site-contact-form-btn:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  transition: 0.3s;
+}
+.site-contact-form-btn:active {
+  opacity: 0.8;
 }
 /* Footer */
 .site-footer {
@@ -330,9 +374,16 @@ ul {
 .site-footer-menu li a {
   color: var(--gray);
 }
+.site-footer-menu li a:hover {
+  color: var(--dark);
+  transition: 0.3s;
+}
+.site-footer-menu li a:active {
+  opacity: 0.8;
+}
 
 
-
+/* Responsive media qeries */
 @media only screen and (max-width: 1150px) {
   .site-pricing-main {
     gap: 15px;
@@ -511,8 +562,10 @@ ul {
   .site-contact-form-email, .site-contact-form-btn {
     width: 100%;
   }
+  .site-footer-menu {
+    gap: 10px;
+  }
   .site-footer-menu li a {
-    color: var(--gray);
     font-size: 13px;
   }
 }
@@ -533,6 +586,7 @@ ul {
     font-size: 16px;
     width: 100%;
   }
-}
-@media only screen and (max-width: 500px) {
+  .site-footer-menu li a {
+    font-size: 10px;
+  }
 }

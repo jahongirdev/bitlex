@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Britlex</title>
-  <meta name="description" content="Learn Any Foreign Language">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Learn Any Foreign Language with our platform!">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="keywords" content="HTML, CSS, Javascript">
   <meta name="author" content="Jahongir Murodboev">
   <!-- Fonts -->
@@ -23,37 +23,39 @@
   <div class="container">
     <!-- Header -->
     <header class="site-header">
-      <nav class="site-nav">
-        <a href="#" class="site-logo">
-          <img src="img/logo.svg" class="site-logo-img" alt="Site Logo">
-        </a>
-        <ul class="site-menu">
-          <li class="site-menu-li">
-            <a href="#" class="site-menu-link">Home</a>
-          </li>
-          <li class="site-menu-li">
-            <a href="#" class="site-menu-link">Skills</a>
-          </li>
-          <li class="site-menu-li">
-            <a href="#" class="site-menu-link">About Us</a>
-          </li>
-          <li class="site-menu-li">
-            <a href="#" class="site-menu-link">Pricing</a>
-          </li>
-          <li class="site-menu-li">
-            <a href="#" class="site-menu-link">Contacts</a>
-          </li>
-        </ul>
-        <a href="#" class="site-nav-btn">Let's Talk</a>
-        <button class="site-mobile-menu">
-          <img src="img/menu-icon.svg" alt="Site Mobile Menu Icon">
-        </button>
-      </nav>
+      <div class="site-navbar-fixed">
+        <nav class="site-nav">
+          <a href="#" class="site-logo">
+            <img src="img/logo.svg" class="site-logo-img" alt="Site Logo">
+          </a>
+          <ul class="site-menu">
+            <li class="site-menu-li">
+              <a href="#home" class="site-menu-link">Home</a>
+            </li>
+            <li class="site-menu-li">
+              <a href="#skills" class="site-menu-link">Skills</a>
+            </li>
+            <li class="site-menu-li">
+              <a href="#about" class="site-menu-link">About Us</a>
+            </li>
+            <li class="site-menu-li">
+              <a href="#pricing" class="site-menu-link">Pricing</a>
+            </li>
+            <li class="site-menu-li">
+              <a href="#contact" class="site-menu-link">Contacts</a>
+            </li>
+          </ul>
+          <a href="#contact" class="site-nav-btn">Let's Talk</a>
+          <button class="site-mobile-menu">
+            <img src="img/menu-icon.svg" alt="Site Mobile Menu Icon">
+          </button>
+        </nav>
+      </div>
     </header>
     <!-- Main -->
     <main class="site-main">
       <!-- Hero -->
-      <section class="site-hero">
+      <section class="site-hero" id="home">
         <div class="site-hero-content">
           <h1 class="site-hero-title">Learn Any Foreign Language</h1>
           <p class="site-hero-content-text">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
@@ -64,7 +66,7 @@
         </div>
       </section>
       <!-- Skills -->
-      <section class="site-skills">
+      <section class="site-skills" id="skills">
         <span class="site-skills-title">Skills</span>
         <div class="site-skills-main">
           <div class="site-skills-box skills-box1">
@@ -97,7 +99,7 @@
         </div>
       </section>
       <!-- About -->
-      <section class="site-about">
+      <section class="site-about" id="about">
         <div class="site-about-content">
           <h3 class="site-about-heading">About Us</h3>
           <p class="site-about-info">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.</p>
@@ -121,7 +123,7 @@
         </div>
       </section>
       <!-- Pricing -->
-      <section class="site-pricing">
+      <section class="site-pricing" id="pricing">
         <h3 class="site-pricing-title">Pricing</h3>
         <div class="site-pricing-main">
           <div class="site-pricing-item">
@@ -154,7 +156,7 @@
         </div>
       </section>
       <!-- Contact -->
-      <section class="site-contact">
+      <section class="site-contact" id="contact">
         <div class="site-contact-img">
           <img src="img/contact.svg" alt="Site Contact Image">
         </div>

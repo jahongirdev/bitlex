@@ -1,8 +1,8 @@
-## CSS Starter Template
+## Britlex Landing Page
 
 ---
 
-**A special CSS starter kit for Front End Developers.**
+**Web: **
 
 - CSS3
 - HTML5
